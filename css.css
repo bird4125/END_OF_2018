@@ -1,1 +1,26 @@
+@font-face{
+	font-family: c_gothic;
+	src: url(./fonts/GOTHIC.ttf);
+	font-weight: 400;
+}
+@font-face{
+	font-family: c_gothic;
+	src: url(./fonts/GOTHICB.ttf);
+	font-weight: 600;
+}
+
+
 *{margin:0;padding: 0;}
+body{overflow-x: hidden;}
+a{text-decoration: none;color: #000;font-family:c_gothic;font-weight: 400w}
+.sec1{width: 100%;height: 1000px;margin:0 auto;position: relative;}
+.sec1 > .main_bg{width: 300%; height: 1000px;position: absolute;left: 0;right: 0;top: 0;z-index: -10;display: flex;}
+.sec1 > .main_bg .bg1{width: 100%;height: 100%;background: url(./imgs/slide_1.jpg) no-repeat top / cover ;}
+.sec1 > .main_bg .bg2{width: 100%;height: 100%;background: url(./imgs/slide_1.jpg) no-repeat top / cover ;}
+.sec1 > .main_bg .bg3{width: 100%;height: 100%;background: url(./imgs/slide_1.jpg) no-repeat top / cover ;}
+.sec1 > .head_and_main{width: 1280px; height: 100%; margin: 0 auto;}
+.sec1 > .head_and_main > .head{width: 100%;height: 100px;display: flex;justify-content: space-between;align-items: center;}
+
+.sec1 > .head_and_main > .main{width: 100% ;height: 900px;background: #aaa;display: flex;flex-flow: column; justify-content: space-around;}
+.sec1 > .head_and_main > .main > .ment{width: 100%; height: 400px; background: #666;position: relative;}
+.sec1 > .head_and_main > .main > .ment a{cursor:default;position: absolute;font-size: 180px;left: calc(50% - 300px);right: 0;top: 0;bottom: 0;font-weight: 600;color: #fff;}
